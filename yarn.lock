@@ -405,10 +405,10 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@himanshua790/use-hydration-zustand@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@himanshua790/use-hydration-zustand/-/use-hydration-zustand-1.0.2.tgz#c2e1c9947bb9875bfd5b34c15f6f7e75b70974c0"
-  integrity sha512-V+GzQwti7G45yImaOqPxEd5+Ltd2iS92lfLDD4WK6T9m41Tg6welzrBYEWxxK+BMR88tsM6l3SHM3wMl8fcElA==
+"@codebayu/use-hydration-zustand@^1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@codebayu/use-hydration-zustand/-/use-hydration-zustand-1.0.4.tgz#51d7cb61043b3a2886f88fb99396c28e7b4631ac"
+  integrity sha512-d1Qw9jWRTxS/XStStsPbJVXA137syKNAr866aPvXsPzo8LVu/R/vGlRgzu/3F6tHd5vh59iE1hiN6hU7I9qd4Q==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
@@ -1515,11 +1515,6 @@
   integrity sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==
   dependencies:
     undici-types "~5.26.4"
-
-"@types/nprogress@^0.2.2":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@types/nprogress/-/nprogress-0.2.3.tgz#b2150b054a13622fabcba12cf6f0b54c48b14287"
-  integrity sha512-k7kRA033QNtC+gLc4VPlfnue58CM1iQLgn1IMAU8VPHGOj7oIHPp9UlhedEnD/Gl8evoCjwkZjlBORtZ3JByUA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -5012,12 +5007,11 @@ next@^14.0.4:
     "@next/swc-win32-ia32-msvc" "14.0.4"
     "@next/swc-win32-x64-msvc" "14.0.4"
 
-nextjs-toploader@^1.6.6:
-  version "1.6.6"
-  resolved "https://registry.yarnpkg.com/nextjs-toploader/-/nextjs-toploader-1.6.6.tgz#ee7a332f8fc938ea774f1fac2dd29b54ec81b333"
-  integrity sha512-LKow/aV28/DLhj4yH1E8ydF/I5QDNsb5NqlbsXBaIVFrmZ9/OGHyxPLdumvPE2IOYoQdvJ4XWoaCA1v7aivYBg==
+nextjs-toploader@^3.6.15:
+  version "3.6.15"
+  resolved "https://registry.yarnpkg.com/nextjs-toploader/-/nextjs-toploader-3.6.15.tgz#ff55cb718d75755d2c1d3723483995f1d3cd746f"
+  integrity sha512-DMxO0BiT+NbGU7E9A8U2+0e7rRbG9qozbk19DFXhKRc9wuhgTPR/u8zr2TevsbFtVxDb9mf8YHFz+oBgjMC+HA==
   dependencies:
-    "@types/nprogress" "^0.2.2"
     nprogress "^0.2.0"
     prop-types "^15.8.1"
 

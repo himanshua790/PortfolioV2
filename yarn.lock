@@ -405,10 +405,10 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@himanshua790/use-hydration-zustand@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@himanshua790/use-hydration-zustand/-/use-hydration-zustand-1.0.2.tgz#c2e1c9947bb9875bfd5b34c15f6f7e75b70974c0"
-  integrity sha512-V+GzQwti7G45yImaOqPxEd5+Ltd2iS92lfLDD4WK6T9m41Tg6welzrBYEWxxK+BMR88tsM6l3SHM3wMl8fcElA==
+"@codebayu/use-hydration-zustand@^1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@codebayu/use-hydration-zustand/-/use-hydration-zustand-1.0.4.tgz#51d7cb61043b3a2886f88fb99396c28e7b4631ac"
+  integrity sha512-d1Qw9jWRTxS/XStStsPbJVXA137syKNAr866aPvXsPzo8LVu/R/vGlRgzu/3F6tHd5vh59iE1hiN6hU7I9qd4Q==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
@@ -5605,10 +5605,10 @@ react-markdown@^8.0.7:
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
 
-react-player@^2.14.1:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.14.1.tgz#fc434c0e1e6161e76f5d5970721596c4acec52b1"
-  integrity sha512-jILj7F9o+6NHzrJ1GqZIxfJgskvGmKeJ05FNhPvgiCpvMZFmFneKEkukywHcULDO2lqITm+zcEkLSq42mX0FbA==
+react-player@^2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.16.0.tgz#89070700b03f5a5ded9f0b3165d4717390796481"
+  integrity sha512-mAIPHfioD7yxO0GNYVFD1303QFtI3lyyQZLY229UEAp/a10cSW+hPcakg0Keq8uWJxT2OiT/4Gt+Lc9bD6bJmQ==
   dependencies:
     deepmerge "^4.0.0"
     load-script "^1.0.0"

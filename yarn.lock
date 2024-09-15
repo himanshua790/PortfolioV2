@@ -405,10 +405,10 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@himanshua790/use-hydration-zustand@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@himanshua790/use-hydration-zustand/-/use-hydration-zustand-1.0.2.tgz#c2e1c9947bb9875bfd5b34c15f6f7e75b70974c0"
-  integrity sha512-V+GzQwti7G45yImaOqPxEd5+Ltd2iS92lfLDD4WK6T9m41Tg6welzrBYEWxxK+BMR88tsM6l3SHM3wMl8fcElA==
+"@codebayu/use-hydration-zustand@^1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@codebayu/use-hydration-zustand/-/use-hydration-zustand-1.0.4.tgz#51d7cb61043b3a2886f88fb99396c28e7b4631ac"
+  integrity sha512-d1Qw9jWRTxS/XStStsPbJVXA137syKNAr866aPvXsPzo8LVu/R/vGlRgzu/3F6tHd5vh59iE1hiN6hU7I9qd4Q==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
@@ -1227,10 +1227,10 @@
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.0.4.tgz#e74892f1a9ccf41d3bf5979ad6d3d77c07b9cba1"
   integrity sha512-yEh2+R8qDlDCjxVpzOTEpBLQTEFAcP2A8fUFLaWNap9GitYKkKv1//y2S6XY6zsR4rCOPRpU7plYDR+az2n30A==
 
-"@next/third-parties@^14.2.3":
-  version "14.2.3"
-  resolved "https://registry.yarnpkg.com/@next/third-parties/-/third-parties-14.2.3.tgz#2e72d9fa456c1155700082ab40ac68018e9ec5d2"
-  integrity sha512-j4E2xBSsEZq4VX2pVm3LpGltSwCxETic6glJWfHyYQvpoMdplCAYrQKpF+E9Gg3jfsrfmRAIdTE11m+biBCx1Q==
+"@next/third-parties@^14.2.11":
+  version "14.2.11"
+  resolved "https://registry.yarnpkg.com/@next/third-parties/-/third-parties-14.2.11.tgz#57e8889735182e362b2ea88019ac51318ea300c6"
+  integrity sha512-KpTrJg05vyi+0NxjuQT9CR4lsiVTciLSupMosR/BtSHek5bqHWP3KvHfFEsOcxBeOZLNhSmBUhkYclQ4eUVu9Q==
   dependencies:
     third-party-capital "1.0.20"
 

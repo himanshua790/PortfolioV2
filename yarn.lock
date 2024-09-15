@@ -405,10 +405,10 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@himanshua790/use-hydration-zustand@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@himanshua790/use-hydration-zustand/-/use-hydration-zustand-1.0.2.tgz#c2e1c9947bb9875bfd5b34c15f6f7e75b70974c0"
-  integrity sha512-V+GzQwti7G45yImaOqPxEd5+Ltd2iS92lfLDD4WK6T9m41Tg6welzrBYEWxxK+BMR88tsM6l3SHM3wMl8fcElA==
+"@codebayu/use-hydration-zustand@^1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@codebayu/use-hydration-zustand/-/use-hydration-zustand-1.0.4.tgz#51d7cb61043b3a2886f88fb99396c28e7b4631ac"
+  integrity sha512-d1Qw9jWRTxS/XStStsPbJVXA137syKNAr866aPvXsPzo8LVu/R/vGlRgzu/3F6tHd5vh59iE1hiN6hU7I9qd4Q==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
@@ -3623,10 +3623,10 @@ https-proxy-agent@^5.0.1:
     agent-base "6"
     debug "4"
 
-husky@^9.0.7:
-  version "9.0.7"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-9.0.7.tgz#047f24ec1b6c681206af714b4217c13ee97fff20"
-  integrity sha512-vWdusw+y12DUEeoZqW1kplOFqk3tedGV8qlga8/SF6a3lOiWLqGZZQvfWvY0fQYdfiRi/u1DFNpudTSV9l1aCg==
+husky@^9.1.6:
+  version "9.1.6"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-9.1.6.tgz#e23aa996b6203ab33534bdc82306b0cf2cb07d6c"
+  integrity sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==
 
 iconv-lite@0.6.3:
   version "0.6.3"

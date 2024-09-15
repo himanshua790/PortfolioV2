@@ -405,10 +405,10 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@himanshua790/use-hydration-zustand@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@himanshua790/use-hydration-zustand/-/use-hydration-zustand-1.0.2.tgz#c2e1c9947bb9875bfd5b34c15f6f7e75b70974c0"
-  integrity sha512-V+GzQwti7G45yImaOqPxEd5+Ltd2iS92lfLDD4WK6T9m41Tg6welzrBYEWxxK+BMR88tsM6l3SHM3wMl8fcElA==
+"@codebayu/use-hydration-zustand@^1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@codebayu/use-hydration-zustand/-/use-hydration-zustand-1.0.4.tgz#51d7cb61043b3a2886f88fb99396c28e7b4631ac"
+  integrity sha512-d1Qw9jWRTxS/XStStsPbJVXA137syKNAr866aPvXsPzo8LVu/R/vGlRgzu/3F6tHd5vh59iE1hiN6hU7I9qd4Q==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
@@ -1716,10 +1716,10 @@
     "@babel/plugin-transform-react-jsx-source" "^7.22.5"
     react-refresh "^0.14.0"
 
-"@vitest/coverage-istanbul@^0.34.4":
-  version "0.34.4"
-  resolved "https://registry.yarnpkg.com/@vitest/coverage-istanbul/-/coverage-istanbul-0.34.4.tgz#467089db9ac8c62169e1d82ac099bb8ed25a094b"
-  integrity sha512-jJiN+U5drYrv1fU39T8jOVWc3RklYkNeTR7UyiVD8fa+Tbav9pAxq02pti93OPZIDoXwwg+RhFAuRuAz///rkQ==
+"@vitest/coverage-istanbul@^0.34.6":
+  version "0.34.6"
+  resolved "https://registry.yarnpkg.com/@vitest/coverage-istanbul/-/coverage-istanbul-0.34.6.tgz#4fc91eac4d7cfc5b91850e9f82bcb986990b79a4"
+  integrity sha512-5KaBNZPDSk2ybavC3rZ1pWGniw7sJ5usuwVGRUYzJwiBfWvnLpuUer7bjw7qUCRGdKJXrBgb/Dsgif9rkwMX/A==
   dependencies:
     istanbul-lib-coverage "^3.2.0"
     istanbul-lib-instrument "^6.0.0"

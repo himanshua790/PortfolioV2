@@ -7,7 +7,7 @@ import StructuredData from '@/components/elements/StructuredData'
 import axios from 'axios'
 import { Person, WithContext } from 'schema-dts'
 
-import { CODEBAYU_SERVICE } from '@/common/constant'
+import { CMS_SERVICE } from '@/common/constant'
 import { METADATA } from '@/common/constant/metadata'
 import { getRequestHeader } from '@/common/helpers'
 import { careerDto } from '@/common/helpers/dto'
@@ -55,7 +55,7 @@ export default async function AboutPage() {
 async function getCareers(): Promise<ICareer[]> {
   revalidatePath('/')
   const headers = getRequestHeader()
-  const response = await axios.get(`${CODEBAYU_SERVICE}/career`, { headers })
+  const response = await axios.get(`${CMS_SERVICE}/career`, { headers })
   const data = response.data as IResponseCodeBayuService<ICareerCMS[]>
   if (data.statusCode !== 200) return []
   return data.data.map(careerDto).sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())

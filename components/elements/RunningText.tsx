@@ -28,8 +28,7 @@ export default function RunningText() {
     })
     window.open(ads.link, '_blank')
   }
-
-  return ads.isShow && !isOpen ? (
+  return ads?.isShow && !isOpen ? (
     <button
       onClick={onRedirect}
       className="absolute left-0 right-0 top-[70px] z-50 flex w-full animate-enter-left bg-emerald-200 text-neutral-800 opacity-100 shadow-md dark:bg-emerald-100 lg:fixed lg:left-auto lg:top-0 lg:max-w-lg lg:rounded-bl-full lg:pl-2"

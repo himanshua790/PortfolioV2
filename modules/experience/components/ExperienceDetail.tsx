@@ -28,6 +28,8 @@ export default function ExperienceDetail(props: ICareer) {
             <span>{end_date ? format(endDate, 'MMM yyyy') : 'Present'}</span>
           </div>
         </div>
+        {/* // TODO: Add logo to cloudinary */}
+
         <Image src={getCloudinaryUrl(logo)} alt={company} width={60} height={60} />
       </div>
       <p className="font-sans text-neutral-700 dark:text-neutral-300">

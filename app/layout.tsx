@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 
-import Analytics from '@/components/elements/Analytics'
-import GoogleAdsense from '@/components/elements/GoogleAdsense'
 import Layouts from '@/components/layouts/index'
 import { GeistSans } from 'geist/font/sans'
 import NextTopLoader from 'nextjs-toploader'
@@ -36,7 +34,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <GoogleAdsense />
+      {/* <GoogleAdsense /> */}
       <body className={GeistSans.className}>
         <NextTopLoader
           color="#05b6d3"
@@ -53,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Layouts>{children}</Layouts>
         </ThemeProviderContext>
 
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   )

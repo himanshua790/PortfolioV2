@@ -5,8 +5,8 @@ import { ICareer } from '@/common/types/careers'
 import CareerList from './CareerList'
 import SkillList from './SkillList'
 import Summary from './Summary'
-import Tiktok from './Tiktok'
-import Unwrapped from './Unwrapped'
+// import Tiktok from './Tiktok'
+// import Unwrapped from './Unwrapped'
 
 interface AboutProps {
   careers: ICareer[]
@@ -21,9 +21,9 @@ export default function About({ careers }: AboutProps) {
       <Breakline />
       <SkillList />
       <Breakline />
-      <Unwrapped />
-      <Breakline />
-      <Tiktok />
+      {/* <Unwrapped /> */}
+      {/* <Breakline /> */}
+      {/* <Tiktok /> */}
     </section>
   )
 }

@@ -36,8 +36,8 @@ describe('Copyright Component', () => {
     expect(element).toBeTruthy()
   })
 
-  it('Should render codebayu text element', () => {
-    const element = screen.getAllByText('codebayu').at(0)
+  it('Should render himanshua790 text element', () => {
+    const element = screen.getAllByText('himanshua790').at(0)
     expect(element).toBeTruthy()
     expect(element?.className).toBe('cursor-pointer hover:dark:text-neutral-400')
   })

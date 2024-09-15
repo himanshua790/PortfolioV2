@@ -61,7 +61,7 @@ export default function ProfileHeader({ expandMenu, imageSize }: ProfileHeaderPr
       />
       <div className="mt-1 flex items-center gap-2">
         <Link href="/" passHref>
-          <h2 className="font-sora flex-grow whitespace-nowrap text-lg font-medium lg:text-xl">Bayu Setiawan</h2>
+          <h2 className="font-sora flex-grow whitespace-nowrap text-lg font-medium lg:text-xl">Himanshu Soni</h2>
         </Link>
         <Tooltip title="Verified">
           <VerifiedIcon size={18} className="text-blue-400" />
@@ -72,7 +72,7 @@ export default function ProfileHeader({ expandMenu, imageSize }: ProfileHeaderPr
         target="_blank"
         className="font-sora hidden text-sm text-neutral-600 transition-all duration-300 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-400 lg:flex"
       >
-        @codebayu
+        @himanshua790
       </Link>
     </div>
   )

@@ -42,7 +42,7 @@ export default function MobileHeader() {
           </div>
           <div className="mt-1 flex items-center gap-2">
             <Link href="/" passHref>
-              <h2 className="font-sora flex-grow whitespace-nowrap text-lg font-medium lg:text-xl">Bayu Setiawan</h2>
+              <h2 className="font-sora flex-grow whitespace-nowrap text-lg font-medium lg:text-xl">Himanshu Soni</h2>
             </Link>
             <Tooltip title="Verified">
               <VerifiedIcon size={18} className="text-blue-400" />

@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Bayu Setiawan - Software Engineer',
-    short_name: 'Bayu Setiawan',
-    description: 'Personal website, portfolio, blog, software engineer roadmap, programming tips of Code Bayu',
+    name: 'Himanshu Soni - Software Engineer',
+    short_name: 'Himanshu Soni',
+    description: 'Personal website, portfolio, blog, software engineer roadmap, programming tips of Himanshu Soni',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

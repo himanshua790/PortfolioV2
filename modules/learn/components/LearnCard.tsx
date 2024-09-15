@@ -15,6 +15,8 @@ export default function LearnCard({ title, slug, description, image, is_new }: I
             New!
           </div>
         )}
+            {/* // TODO: Add image to cloudinary */}
+
         <Image
           src={getCloudinaryUrl(image)}
           width={400}

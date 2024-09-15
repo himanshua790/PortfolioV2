@@ -10,5 +10,5 @@ updates:
     schedule:
       interval: 'monthly'
       time: '00:00'
-      timezone: 'Asia/Jakarta'
+      timezone: 'Asia/Kolkata'
     open-pull-requests-limit: 5

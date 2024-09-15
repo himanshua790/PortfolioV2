@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 import Container from '@/components/elements/Container'
 import PageHeading from '@/components/elements/PageHeading'
-import { getCodeBayuData, getPromotions } from '@/services/codebayu'
+import { getCodeBayuData, getPromotions } from '@/services/api'
 
 import { METADATA } from '@/common/constant/metadata'
 import { IAdsBanner } from '@/common/types/ads'

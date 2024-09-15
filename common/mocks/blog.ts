@@ -5,16 +5,16 @@ export const commentsMock = [
     created_at: '2023-08-25T23:09:11Z',
     body_html: '<p>Hi, kindly leave a like and comment if you got new insight! 🔥</p>\n\n',
     user: {
-      name: 'Bayu Setiawan',
-      username: 'codebayu',
+      name: 'Himanshu Soni',
+      username: 'himanshua790',
       twitter_username: null,
-      github_username: 'codebayu',
+      github_username: 'himanshua790',
       user_id: 1145348,
-      website_url: 'https://www.codebayu.com/',
+      website_url: 'https://www.himanshusoni.in/',
       profile_image:
-        'https://res.cloudinary.com/practicaldev/image/fetch/s--HRuSfXrd--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1145348/7afdddab-c142-442a-b714-fea84d9a2b0d.png',
+        'https://res.cloudinary.com/himanshusoni/image/upload/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/profile.jpg',
       profile_image_90:
-        'https://res.cloudinary.com/practicaldev/image/fetch/s--AfWjiSKZ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1145348/7afdddab-c142-442a-b714-fea84d9a2b0d.png'
+        'https://res.cloudinary.com/himanshusoni/image/upload/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/profile.jpg'
     },
     children: [
       {
@@ -23,16 +23,16 @@ export const commentsMock = [
         created_at: '2023-08-25T23:09:11Z',
         body_html: '<p>Hi, kindly leave a like and comment if you got new insight! 🔥</p>\n\n',
         user: {
-          name: 'Bayu Setiawan',
-          username: 'codebayu',
+          name: 'Himanshu Soni',
+          username: 'himanshua790',
           twitter_username: null,
-          github_username: 'codebayu',
+          github_username: 'himanshua790',
           user_id: 1145348,
-          website_url: 'https://www.codebayu.com/',
+          website_url: 'https://www.himanshusoni.in/',
           profile_image:
-            'https://res.cloudinary.com/practicaldev/image/fetch/s--HRuSfXrd--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1145348/7afdddab-c142-442a-b714-fea84d9a2b0d.png',
+            'https://res.cloudinary.com/himanshusoni/image/upload/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/profile.jpg',
           profile_image_90:
-            'https://res.cloudinary.com/practicaldev/image/fetch/s--AfWjiSKZ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1145348/7afdddab-c142-442a-b714-fea84d9a2b0d.png'
+            'https://res.cloudinary.com/himanshusoni/image/upload/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/profile.jpg'
         },
         children: []
       }

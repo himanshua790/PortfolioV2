@@ -3,14 +3,14 @@ import { ICareer } from '../types/careers'
 export const careersMock: ICareer[] = [
   {
     position: 'Senior Frontend Engineer',
-    company: 'CodeBayu',
-    logo: '/images/codebayu.png',
-    location: 'Jakarta, Indonesia',
+    company: 'Stealth Startup',
+    logo: '/images/himanshua790.png',
+    location: 'Bhopal, India',
     location_type: 'remote',
     type: 'full-time',
     start_date: new Date(),
     end_date: null,
-    link: 'https://www.codebayu.com/',
-    slug: 'codebayu'
+    link: 'https://www.himanshusoni.in/',
+    slug: 'himanshua790'
   }
 ]

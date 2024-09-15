@@ -19,6 +19,7 @@ export default function ProjectCard({ title, slug, description, image, stacks, i
             Featured
           </div>
         )}
+        {/* // TODO: Add logo to cloudinary */}
         <Image
           src={getCloudinaryUrl(image) || PLACEHOLDER_URL}
           width={400}

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { CODEBAYU_SERVICE } from '@/common/constant'
+import { CMS_SERVICE } from '@/common/constant'
 import { getRequestHeader } from '@/common/helpers'
 import { learnDto } from '@/common/helpers/dto'
 import { ICodeBayuData, IResponseCodeBayuService } from '@/common/types'
@@ -23,7 +23,7 @@ export async function getCodeBayuData(): Promise<ICodeBayuData> {
 
 export async function getPromotions(): Promise<IAdsBanner[]> {
   const headers = getRequestHeader()
-  const response = await axios.get(`${CODEBAYU_SERVICE}/promotion`, { headers })
+  const response = await axios.get(`${CMS_SERVICE}/promotion`, { headers })
   const data = response.data as IResponseCodeBayuService<IAdsBanner[]>
   if (data.statusCode !== 200) return []
   return data.data
@@ -31,7 +31,8 @@ export async function getPromotions(): Promise<IAdsBanner[]> {
 
 export async function getLearns(): Promise<ILearn[]> {
   const headers = getRequestHeader()
-  const response = await axios.get(`${CODEBAYU_SERVICE}/learn`, { headers })
+  console.log(CMS_SERVICE)
+  const response = await axios.get(`${CMS_SERVICE}/learn`, { headers })
   const data = response.data as IResponseCodeBayuService<ILearnCMS[]>
   if (data.statusCode !== 200) return []
   return data.data.map(learnDto)
@@ -39,7 +40,7 @@ export async function getLearns(): Promise<ILearn[]> {
 
 export async function getServices(): Promise<IServices[]> {
   const headers = getRequestHeader()
-  const response = await axios.get(`${CODEBAYU_SERVICE}/service`, { headers })
+  const response = await axios.get(`${CMS_SERVICE}/service`, { headers })
   const data = response.data as IResponseCodeBayuService<IServices[]>
   if (data.statusCode !== 200) return []
   return data.data
@@ -47,7 +48,7 @@ export async function getServices(): Promise<IServices[]> {
 
 export async function getCareers(): Promise<ICareer[]> {
   const headers = getRequestHeader()
-  const response = await axios.get(`${CODEBAYU_SERVICE}/career`, { headers })
+  const response = await axios.get(`${CMS_SERVICE}/career`, { headers })
   const data = response.data as IResponseCodeBayuService<ICareer[]>
   if (data.statusCode !== 200) return []
   return data.data

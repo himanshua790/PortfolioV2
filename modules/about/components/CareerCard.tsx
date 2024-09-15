@@ -59,6 +59,7 @@ export default function CareerCard({ position, company, logo, location, start_da
           )}
         >
           {logo ? (
+            // TODO: Add logo to cloudinary
             <Image src={getCloudinaryUrl(logo)} width={55} height={55} alt={company} className="relative z-10" />
           ) : (
             <CompanyIcon size={30} />

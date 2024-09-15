@@ -1,5 +1,5 @@
 {
-  "name": "v2.codebayu.com",
+  "name": "v2.himanshusoni.in",
   "version": "1.2.6",
   "private": true,
   "scripts": {
@@ -14,12 +14,6 @@
     "coverage": "vitest --coverage --run",
     "prepare": "husky"
   },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codebayu/v2.codebayu.com"
-  },
-  "homepage": "https://www.codebayu.com",
   "dependencies": {
     "@codebayu/use-hydration-zustand": "^1.0.2",
     "@ctrl/react-adsense": "^1.7.0",

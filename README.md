@@ -1,7 +1,7 @@
-# codebayu.com
-
+# himanshusoni.in
+TODO: Fix this.
 <div align="center" width="100%">
-   <img width="600" alt="codebayu" src="https://github.com/codebayu/v2.codebayu.com/assets/99315255/fb6d296c-d427-49d8-9d7d-1bda3bd0e5ef">
+   <img width="600" alt="himanshua790" src="https://github.com/himanshua790/v2.himanshusoni.in/assets/99315255/fb6d296c-d427-49d8-9d7d-1bda3bd0e5ef">
 </div>
 
 ## Introduction
@@ -27,12 +27,12 @@ Before you begin, make sure you have Node.js and npm (Node Package Manager) inst
 1. Clone this repository to your local machine using:
 
    ```bash
-   git clone https://github.com/codebayu/v2.codebayu.com.git
+   git clone https://github.com/himanshua790/v2.himanshusoni.in.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd v2.codebayu.com
+   cd v2.himanshusoni.in
    ```
 3. Install the dependencies:
    ```bash

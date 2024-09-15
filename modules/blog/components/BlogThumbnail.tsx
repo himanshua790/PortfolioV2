@@ -8,6 +8,7 @@ import { formatBlogSlug, formatDate } from '@/common/helpers'
 import { BlogItem } from '@/common/types/blog'
 
 export default function BlogThumbnail({ newestBlog }: { newestBlog: BlogItem }) {
+  if (!newestBlog?.id) return null
   return (
     <Link
       href={`/blog/${formatBlogSlug(newestBlog.slug)}?id=${newestBlog.id}&read-mode=true`}

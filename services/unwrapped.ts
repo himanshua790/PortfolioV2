@@ -9,6 +9,7 @@ export async function getUnwrappedServices() {
     const querySnapshot = await getDocs(ref)
     const data: DocumentData[] = []
     querySnapshot.forEach(doc => {
+      console.log(doc)
       const bookData = doc.data()
       bookData.id = doc.id
       data.push(bookData)

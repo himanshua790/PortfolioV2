@@ -27,6 +27,7 @@ export default function ProjectDetail({ title, image, stacks, link_demo, link_gi
         </div>
         <ProjectLink title={title} link_demo={link_demo || ''} link_github={link_github || ''} />
       </div>
+       {/* // TODO: Add image to cloudinary */}
       <Image
         src={getCloudinaryUrl(image)}
         width={800}

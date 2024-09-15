@@ -10,7 +10,7 @@ export default function Copyright({ isHover }: { isHover: boolean }) {
             ❤
           </span>
           <span>by</span>
-          <span className="cursor-pointer hover:dark:text-neutral-400">codebayu</span>
+          <span className="cursor-pointer hover:dark:text-neutral-400">himanshua790</span>
         </>
       ) : (
         <span data-testid="love" className="animate-pulse text-red-500">

@@ -13,7 +13,7 @@ import Blog from '@/modules/blog'
 export const metadata: Metadata = {
   title: `Blog ${METADATA.exTitle}`,
   description: 'My blogs content about programming and software development',
-  keywords: 'blog code bayu, codebayu',
+  keywords: 'blog by Himanshu Soni, himanshua790',
   alternates: {
     canonical: `${process.env.DOMAIN}/blog`
   }

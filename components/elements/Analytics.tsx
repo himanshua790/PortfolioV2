@@ -3,7 +3,7 @@
 import { usePathname, useSearchParams } from 'next/navigation'
 
 import { GoogleTagManager } from '@next/third-parties/google'
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 
 import { sendPageView } from '@/common/libs/gtm'
 
@@ -18,5 +18,11 @@ export default function Analytics() {
     }
   }, [pathname, searchParams])
 
-  return <GoogleTagManager gtmId={GTM_ID} />
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <GoogleTagManager gtmId={GTM_ID} />
+    </Suspense>
+  )
 }
+
+// Import Suspense from React

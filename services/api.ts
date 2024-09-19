@@ -16,7 +16,7 @@ export async function getCodeBayuData(): Promise<ICodeBayuData> {
     if (response?.status !== 200) return {} as ICodeBayuData
     return response.data
   } catch (error) {
-    if (error instanceof Error) throw new Error(error.message)
+    if (error instanceof Error) console.error(error.message)
     return {} as ICodeBayuData
   }
 }

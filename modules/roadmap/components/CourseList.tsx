@@ -2,7 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 
 import { tourRoadmap } from '@/common/constant/drivers'
 import createDrivers from '@/common/libs/drivers'
@@ -38,10 +38,12 @@ export default function CourseList({ roadmaps }: { roadmaps: IRoadmap }) {
   }
 
   return (
-    <div className="mt-6 flex flex-col space-y-2">
-      {renderCourse.map((course, index) => (
-        <CourseCard key={index} {...course} />
-      ))}
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="mt-6 flex flex-col space-y-2">
+        {renderCourse.map((course, index) => (
+          <CourseCard key={index} {...course} />
+        ))}
+      </div>
+    </Suspense>
   )
 }

@@ -2,8 +2,7 @@ import {
   BiEditAlt as BlogIcon,
   BiPaperPlane as ContactIcon,
   BiCategoryAlt as DashboardIcon,
-  BiHomeSmile as HomeIcon,
-  BiBookBookmark as LearnIcon,
+  BiHomeSmile as HomeIcon, // BiBookBookmark as LearnIcon,
   BiLeaf as ProfileIcon,
   BiArchive as ProjectIcon
 } from 'react-icons/bi'
@@ -12,7 +11,7 @@ import {
   BsGithub as GithubIcon,
   BsLinkedin as LinkedinIcon
 } from 'react-icons/bs'
-import { LuTrello, LuWorkflow } from 'react-icons/lu'
+import { LuTrello } from 'react-icons/lu'
 import { PiChatTeardropDotsBold as ChatIcon } from 'react-icons/pi'
 
 // import { RiNpmjsFill as NpmIcon } from 'react-icons/ri'
@@ -54,22 +53,22 @@ export const MENU_ITEMS: MenuItemProps[] = [
     eventName: 'Pages: Projects'
   },
 
-  {
-    title: 'Learn',
-    href: '/learn',
-    icon: <LearnIcon size={iconSize} />,
-    isShow: false,
-    isExternal: false,
-    eventName: 'Pages: Learn'
-  },
-  {
-    title: 'Roadmap',
-    href: '/roadmap?tribe=frontend-developer',
-    icon: <LuWorkflow size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Roadmap'
-  },
+  // {
+  //   title: 'Learn',
+  //   href: '/learn',
+  //   icon: <LearnIcon size={iconSize} />,
+  //   isShow: false,
+  //   isExternal: false,
+  //   eventName: 'Pages: Learn'
+  // },
+  // {
+  //   title: 'Roadmap',
+  //   href: '/roadmap?tribe=frontend-developer',
+  //   icon: <LuWorkflow size={iconSize} />,
+  //   isShow: true,
+  //   isExternal: false,
+  //   eventName: 'Pages: Roadmap'
+  // },
   {
     title: 'Task Board',
     href: '/board',

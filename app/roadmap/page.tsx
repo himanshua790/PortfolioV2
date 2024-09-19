@@ -10,6 +10,7 @@ import { IRoadmap } from '@/common/types/roadmap'
 
 import Roadmap from '@/modules/roadmap'
 
+console.log('Roadmap', process.env.DOMAIN)
 export const metadata: Metadata = {
   title: `Roadmap ${METADATA.exTitle}`,
   description: 'Learning path recomendation and free course playlist for software engineer',
@@ -37,5 +38,5 @@ export default async function RoadmapPage() {
 
 async function getRoadmaps(): Promise<IRoadmap> {
   const response = await getCodeBayuData()
-  return response.roadmaps
+  return response?.roadmaps || { frontend: [], mastering_react: [] }
 }

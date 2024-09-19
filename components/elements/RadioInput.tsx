@@ -5,7 +5,7 @@ type RadioInputProps<TFormValue extends FieldValues> = {
   register: UseFormRegister<TFormValue>
   name: Path<TFormValue>
   id: string
-  rule?: RegisterOptions
+  rule?: RegisterOptions<TFormValue, Path<TFormValue>>
 }
 
 export default function RadioInput<TFormValue extends FieldValues>({

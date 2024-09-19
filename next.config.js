@@ -24,6 +24,9 @@ const nextConfig = {
     GTM_ID: process.env.GTM_ID,
     GOOGLE_ADSENSE_UNIT_BLOG_CLIENT: process.env.GOOGLE_ADSENSE_UNIT_BLOG_CLIENT,
     GOOGLE_ADSENSE_UNIT_BLOG_SLOT: process.env.GOOGLE_ADSENSE_UNIT_BLOG_SLOT
+  },
+  experimental: {
+    missingSuspenseWithCSRBailout: false
   }
 }
 

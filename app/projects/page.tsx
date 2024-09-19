@@ -35,5 +35,5 @@ export default async function ProjectsPage() {
 
 async function getProjets(): Promise<IProjectItem[]> {
   const response = await getCodeBayuData()
-  return response.projects
+  return response?.projects || []
 }

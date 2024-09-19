@@ -2,7 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 
-import { ReactNode } from 'react'
+import { ReactNode, Suspense } from 'react'
 
 interface ContainerProps {
   children: ReactNode
@@ -15,12 +15,14 @@ export default function Container({ children, className = '', withMarginTop = tr
   const searchParams = useSearchParams()
   const readMode = searchParams?.get('read-mode')
   return (
-    <div
-      data-testid="container"
-      className={`mb-10 ${(readMode !== 'true' || withMarginTop) && 'mt-6'} p-4 md:p-8 lg:pr-0 ${className}`}
-      {...others}
-    >
-      {children}
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <div
+        data-testid="container"
+        className={`mb-10 ${(readMode !== 'true' || withMarginTop) && 'mt-6'} p-4 md:p-8 lg:pr-0 ${className}`}
+        {...others}
+      >
+        {children}
+      </div>
+    </Suspense>
   )
 }

@@ -17,12 +17,30 @@ interface ProjectsDetailPageProps {
 
 export async function generateMetadata({ params }: ProjectsDetailPageProps): Promise<Metadata> {
   const project = await getProjectDetail(params.slug)
+  if (!project) return {}
+  let openGraphUrl: string
+  let canonicalUrl: string
+
+  try {
+    openGraphUrl = new URL(`${METADATA.openGraph.url}/${project.slug}`).toString()
+  } catch (error) {
+    console.error('Invalid OpenGraph URL:', error)
+    openGraphUrl = `${process.env.DOMAIN}` // Fallback to domain root
+  }
+
+  try {
+    canonicalUrl = new URL(`${process.env.DOMAIN}/projects/${params.slug}`).toString()
+  } catch (error) {
+    console.error('Invalid Canonical URL:', error)
+    canonicalUrl = `${process.env.DOMAIN}` // Fallback to domain root
+  }
+
   return {
     title: `${project.title} ${METADATA.exTitle}`,
     description: project.description,
     openGraph: {
       images: project.image,
-      url: `${METADATA.openGraph.url}/${project.slug}`,
+      url: openGraphUrl,
       siteName: METADATA.openGraph.siteName,
       locale: METADATA.openGraph.locale,
       type: 'article',
@@ -30,13 +48,14 @@ export async function generateMetadata({ params }: ProjectsDetailPageProps): Pro
     },
     keywords: project.title,
     alternates: {
-      canonical: `${process.env.DOMAIN}/projects/${params.slug}`
+      canonical: canonicalUrl
     }
   }
 }
 
 export default async function ProjectDetailPage({ params }: ProjectsDetailPageProps) {
   const detail = await getProjectDetail(params.slug)
+  if (!detail?.title) return null
   return (
     <>
       <Container data-aos="fade-left">
@@ -48,10 +67,10 @@ export default async function ProjectDetailPage({ params }: ProjectsDetailPagePr
   )
 }
 
-async function getProjectDetail(slug: string): Promise<IProjectItem> {
+async function getProjectDetail(slug: string): Promise<IProjectItem | undefined> {
   const response = await getCodeBayuData()
-  const projects = response.projects
-
+  const projects = response?.projects || []
+  if (projects?.length <= 0) return undefined
   const project = projects.find(item => item.slug === slug) as IProjectItem
   const contents = loadMdxFiles(slug, 'projects')
   const content = contents.find(item => item.slug === slug)

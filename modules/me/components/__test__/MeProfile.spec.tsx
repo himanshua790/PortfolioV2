@@ -42,7 +42,7 @@ describe('MeProfile Component', () => {
   })
 
   it('Should render tagline text', () => {
-    const text = screen.getByText('Software Engineer who focus on frontend development.')
+    const text = screen.getByText('Software Engineer who focus on web development.')
     expect(text).toBeTruthy()
     expect(text.className).toBe(
       'text-center text-sm leading-[1.8] text-neutral-800 dark:text-neutral-300 md:leading-loose'

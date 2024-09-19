@@ -7,7 +7,7 @@ type RadioInputProps<TFormValue extends FieldValues> = {
   register: UseFormRegister<TFormValue>
   name: Path<TFormValue>
   error: FieldErrors
-  rule?: RegisterOptions
+  rule?: RegisterOptions<TFormValue, Path<TFormValue>>
   isTextArea?: boolean
   placeholder?: string
   rows?: number

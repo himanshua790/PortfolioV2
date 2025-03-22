@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Saweria from '@/components/elements/Saweria'
+// import Saweria from '@/components/elements/Saweria'
 import { FcMindMap } from 'react-icons/fc'
 
 export default function GoHome() {
@@ -17,7 +17,7 @@ export default function GoHome() {
         <FcMindMap data-testid="go-home-icon" />
         <span>Website & Portfolio</span>
       </Link>
-      <Saweria withText />
+      {/* <Saweria withText /> */}
     </div>
   )
 }

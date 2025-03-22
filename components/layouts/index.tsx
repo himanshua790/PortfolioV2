@@ -50,7 +50,7 @@ export default function Layouts({ children }: LayoutsProps) {
 
         {!hideSidebar && <LeftCollapseNavigation />}
         <Notif />
-        <ChatOverlay />
+        {/* <ChatOverlay /> */}
       </div>
     </Suspense>
   )

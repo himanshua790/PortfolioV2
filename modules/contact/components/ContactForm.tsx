@@ -2,7 +2,6 @@
 
 import InputField from '@/components/elements/InputField'
 import { Button } from '@/components/ui/button'
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 
@@ -19,21 +18,39 @@ export default function ContactForm() {
     reset,
     formState: { errors }
   } = useForm<IFormEmail>()
+
   const [isLoading, setIsLoading] = useState(false)
   const [buttonText, setButtonText] = useState('Send Email')
   const [isSuccess, setIsSuccess] = useState(false)
+
   const regexEmail =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-  async function handleFormSubmit(payload: IFormEmail) {
+  const GETFORM_ENDPOINT = 'https://getform.io/f/axowlzpb'
+
+  async function handleFormSubmit(data: IFormEmail) {
     setIsLoading(true)
     try {
-      const response = await axios.post('/api/email', payload)
-      if (response.status === 200) setIsSuccess(true)
-      reset()
-      setIsLoading(false)
+      const formData = new FormData()
+      formData.append('name', data.name)
+      formData.append('email', data.email)
+      formData.append('message', data.message)
+
+      const response = await fetch(GETFORM_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setIsSuccess(true)
+        reset()
+      }
     } catch (error) {
-      console.log(error)
+      console.error('Form submission error:', error)
+    } finally {
       setIsLoading(false)
     }
   }
@@ -43,6 +60,7 @@ export default function ContactForm() {
     if (!isLoading && isSuccess) setButtonText('Your email sent successfully')
     const timeout = setTimeout(() => {
       setButtonText('Send Email')
+      setIsSuccess(false)
     }, 5000)
     return () => clearTimeout(timeout)
   }, [isLoading, isSuccess])
@@ -59,7 +77,7 @@ export default function ContactForm() {
               required: true,
               pattern: {
                 value: regexEmail,
-                message: 'please enter a valid email'
+                message: 'Please enter a valid email'
               }
             }}
             register={register}

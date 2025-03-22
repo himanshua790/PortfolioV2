@@ -3,7 +3,7 @@ import { getCloudinaryUrl } from '../libs/cloudinary'
 export const PLACEHOLDER_URL = getCloudinaryUrl('/placeholder')
 export const BACKDROP_IMAGE = getCloudinaryUrl('/backdrop')
 export const PROFILE_URL = getCloudinaryUrl('/profile')
-export const RESUME_URL = getCloudinaryUrl('/resume')
+export const RESUME_URL = "https://drive.google.com/file/d/1UZ094YphlHOSBQjzDpn_VCTl_zE1VOSX"
 
 export const DEVTO_PROFILE = 'https://dev.to/himanshua790'
 export const DEVTO_BLOG_API = 'https://dev.to/api/articles?username=himanshua790'

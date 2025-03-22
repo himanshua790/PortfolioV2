@@ -1,4 +1,4 @@
-import Saweria from '@/components/elements/Saweria'
+// import Saweria from '@/components/elements/Saweria'
 import TypeAnimation from '@/components/elements/TypeAnimation'
 
 export default function Introduction() {
@@ -8,7 +8,7 @@ export default function Introduction() {
         <div className="font-sora flex gap-2 text-2xl font-bold lg:text-3xl">
           <TypeAnimation sequence={["Hi, I'm Himanshu Soni", "Hi, I'm Software Engineer"]} delay={3000} />
         </div>
-        <Saweria />
+        {/* <Saweria /> */}
       </div>
 
       <div className="space-y-4">

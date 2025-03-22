@@ -7,7 +7,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { ReactNode, Suspense, useEffect } from 'react'
 
-import ChatOverlay from '../elements/ChatOverlay'
 import RunningText from '../elements/RunningText'
 import ShiningStar from '../elements/ShiningStar'
 import LeftCollapseNavigation from './LeftCollapseNavigation'

@@ -7,6 +7,8 @@ import { MdUpcoming } from 'react-icons/md'
 
 import { METADATA } from '@/common/constant/metadata'
 
+import WorkInProgress from '../components/ui/WorkInProgress'
+
 // import { IAdsBanner } from '@/common/types/ads'
 // import { IRoadmap } from '@/common/types/roadmap'
 
@@ -33,7 +35,12 @@ export default async function RoadmapPage() {
       <Container data-aos="fade-left">
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
         {/* <Roadmap roadmaps={roadmaps} promotion={promotion} /> */}
-        <WorkInProgress />
+        <WorkInProgress
+          icon={MdUpcoming}
+          title="Feature Coming Soon"
+          description="We're working on an exciting new feature that will be available in the next update."
+          footerText="Expected release: Next month"
+        />
       </Container>
     </>
   )
@@ -43,15 +50,3 @@ export default async function RoadmapPage() {
 //   const response = await getCodeBayuData()
 //   return response?.roadmaps || { frontend: [], mastering_react: [] }
 // }
-const WorkInProgress = () => {
-  return (
-    <div className="flex flex-col items-center justify-center py-20 text-center">
-      <MdUpcoming className="mb-4 text-7xl text-gray-400" />
-      <h2 className="mb-2 text-2xl font-bold">Work in Progress</h2>
-      <p className="mb-4 max-w-md text-gray-600">
-        We&apos;re currently building this roadmap section to provide you with comprehensive learning paths and resources.
-      </p>
-      <p className="text-sm text-gray-500">Check back soon for updates!</p>
-    </div>
-  )
-}

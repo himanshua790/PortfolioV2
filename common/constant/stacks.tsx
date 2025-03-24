@@ -1,8 +1,11 @@
 import { BiLogoPostgresql } from 'react-icons/bi'
 import { BsFillBootstrapFill } from 'react-icons/bs'
+import { BsKanban } from 'react-icons/bs'
+import { FaGitlab } from 'react-icons/fa'
 import {
-  SiAstro,
   SiAmazonaws,
+  SiAstro,
+  SiAuth0,
   SiChakraui,
   SiCss3,
   SiDjango,
@@ -10,8 +13,8 @@ import {
   SiExpress,
   SiFirebase,
   SiFramer,
-  SiGithub,
   SiGit,
+  SiGithub,
   SiGooglecloud,
   SiGraphql,
   SiGulp,
@@ -21,13 +24,12 @@ import {
   SiJira,
   SiJson,
   SiJsonwebtokens,
-  SiMui,
   SiMongodb,
+  SiMui,
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
   SiNuxtdotjs,
-  SiAuth0,
   SiPhp,
   SiPrisma,
   SiPuppeteer,
@@ -48,8 +50,6 @@ import {
   SiVuedotjs
 } from 'react-icons/si'
 import { TbApi, TbBrandThreejs } from 'react-icons/tb'
-import { FaGitlab } from 'react-icons/fa'
-import { BsKanban } from 'react-icons/bs'
 
 type stacksProps = {
   [key: string]: JSX.Element
@@ -93,7 +93,7 @@ export const STACKS: stacksProps = {
   'React Table': <SiReacttable size={iconSize} className="text-rose-600" />,
   Astro: <SiAstro size={iconSize} className="text-purple-500" />,
   Json: <SiJson size={iconSize} className="text-neutral-700" />,
-  
+
   // New additions
   'Three.js': <TbBrandThreejs size={iconSize} className="text-black" />,
   Python: <SiPython size={iconSize} className="text-blue-500" />,

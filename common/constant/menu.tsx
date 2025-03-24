@@ -1,5 +1,5 @@
 import {
-  BiEditAlt as BlogIcon,
+  // BiEditAlt as BlogIcon,
   BiPaperPlane as ContactIcon,
   BiCategoryAlt as DashboardIcon,
   BiHomeSmile as HomeIcon, // BiBookBookmark as LearnIcon,
@@ -12,8 +12,8 @@ import {
   BsLinkedin as LinkedinIcon
 } from 'react-icons/bs'
 import { LuTrello } from 'react-icons/lu'
-// import { PiChatTeardropDotsBold as ChatIcon } from 'react-icons/pi'
 
+// import { PiChatTeardropDotsBold as ChatIcon } from 'react-icons/pi'
 // import { RiNpmjsFill as NpmIcon } from 'react-icons/ri'
 import { MenuItemProps, SocialMedia } from '../types/menu'
 
@@ -36,14 +36,14 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isExternal: false,
     eventName: 'Pages: About'
   },
-  {
-    title: 'Blog',
-    href: '/blog?category=home',
-    icon: <BlogIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Blog'
-  },
+  // {
+  //   title: 'Blog',
+  //   href: '/blog?category=home',
+  //   icon: <BlogIcon size={iconSize} />,
+  //   isShow: true,
+  //   isExternal: false,
+  //   eventName: 'Pages: Blog'
+  // },
   {
     title: 'Projects',
     href: '/projects',

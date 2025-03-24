@@ -1,4 +1,3 @@
-
 export const SKILLS = [
   'JavaScript',
   'TypeScript',

@@ -21,7 +21,7 @@ export default function CourseList({ roadmaps }: { roadmaps: IRoadmap }) {
   const { runDriver, isProductTour } = createDrivers({ steps: tourRoadmap, product: 'roadmap' })
   const tribe = params.get('tribe')
   const [renderCourse, setRenderCourse] = useState<CourseCardProps[]>([])
-  const { frontend, mastering_react } = roadmaps
+  const { frontend = [], mastering_react = [] } = roadmaps
 
   useEffect(() => {
     let selectTribe: CourseCardProps[] = []
